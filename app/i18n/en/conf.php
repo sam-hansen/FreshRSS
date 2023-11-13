@@ -17,7 +17,7 @@ return array(
 		'help' => 'More options are available in the individual feed’s settings',
 		'keep_favourites' => 'Never delete favourites',
 		'keep_labels' => 'Never delete labels',
-		'keep_max' => 'Maximum number of articles to keep',
+		'keep_max' => 'Maximum number of articles to keep per feed',
 		'keep_min_by_feed' => 'Minimum number of articles to keep per feed',
 		'keep_period' => 'Maximum age of articles to keep',
 		'keep_unreads' => 'Never delete unread articles',
@@ -32,7 +32,11 @@ return array(
 	),
 	'display' => array(
 		'_' => 'Display',
-		'darkMode' => 'Automatic dark mode (beta)',	// TODO
+		'darkMode' => array(
+			'_' => 'Automatic dark mode (beta)',
+			'auto' => 'Auto',
+			'no' => 'No',
+		),
 		'icon' => array(
 			'bottom_line' => 'Bottom line',
 			'display_authors' => 'Authors',
@@ -66,6 +70,13 @@ return array(
 		),
 		'timezone' => 'Time zone',
 		'title' => 'Display',
+		'website' => array(
+			'full' => 'Icon and name',
+			'icon' => 'Icon only',
+			'label' => 'Website',
+			'name' => 'Name only',
+			'none' => 'None',
+		),
 		'width' => array(
 			'content' => 'Content width',
 			'large' => 'Wide',
@@ -193,8 +204,9 @@ return array(
 		'read' => array(
 			'article_open_on_website' => 'when the article is opened on its original website',
 			'article_viewed' => 'when the article is viewed',
+			'focus' => 'when focused (except for important feeds)',
 			'keep_max_n_unread' => 'Max number of articles to keep unread',
-			'scroll' => 'while scrolling',
+			'scroll' => 'while scrolling (except for important feeds)',
 			'upon_gone' => 'when it is no longer in the upstream news feed',
 			'upon_reception' => 'upon receiving the article',
 			'when' => 'Mark an article as read…',

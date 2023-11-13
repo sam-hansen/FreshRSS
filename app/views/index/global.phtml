@@ -76,15 +76,12 @@
 		?>
 	<div id="noArticlesToShow" class="prompt alert alert-warn">
 		<h2 class="alert-head"><?= _t('index.feed.empty') ?></h2>
-		<?php if (FreshRSS_Auth::hasAccess()) { ?>
-		<p><a href="<?= _url('subscription', 'add') ?>"><?= _t('index.feed.add') ?></a></p>
-		<?php } ?>
 	</div>
 	<?php } ?>
 </main>
 
 <div id="overlay">
 	<a class="close" href="#"><?= _i('close') ?></a>
+	<div id="panel"<?= FreshRSS_Context::$user_conf->display_posts ? '' : ' class="hide_posts"' ?>>
 </div>
-<div id="panel"<?= FreshRSS_Context::$user_conf->display_posts ? '' : ' class="hide_posts"' ?>>
 </div>

@@ -17,7 +17,7 @@ return array(
 		'help' => 'More options are available in the individual feed’s settings',	// IGNORE
 		'keep_favourites' => 'Never delete favorites',
 		'keep_labels' => 'Never delete labels',	// IGNORE
-		'keep_max' => 'Maximum number of articles to keep',	// IGNORE
+		'keep_max' => 'Maximum number of articles to keep per feed',	// IGNORE
 		'keep_min_by_feed' => 'Minimum number of articles to keep per feed',	// IGNORE
 		'keep_period' => 'Maximum age of articles to keep',	// IGNORE
 		'keep_unreads' => 'Never delete unread articles',	// IGNORE
@@ -32,7 +32,11 @@ return array(
 	),
 	'display' => array(
 		'_' => 'Display',	// IGNORE
-		'darkMode' => 'Automatic dark mode (beta)',	// TODO
+		'darkMode' => array(
+			'_' => 'Automatic dark mode (beta)',	// IGNORE
+			'auto' => 'Auto',	// IGNORE
+			'no' => 'No',	// IGNORE
+		),
 		'icon' => array(
 			'bottom_line' => 'Bottom line',	// IGNORE
 			'display_authors' => 'Authors',	// IGNORE
@@ -66,6 +70,13 @@ return array(
 		),
 		'timezone' => 'Time zone',	// IGNORE
 		'title' => 'Display',	// IGNORE
+		'website' => array(
+			'full' => 'Icon and name',	// IGNORE
+			'icon' => 'Icon only',	// IGNORE
+			'label' => 'Website',	// IGNORE
+			'name' => 'Name only',	// IGNORE
+			'none' => 'None',	// IGNORE
+		),
 		'width' => array(
 			'content' => 'Content width',	// IGNORE
 			'large' => 'Wide',	// IGNORE
@@ -193,8 +204,9 @@ return array(
 		'read' => array(
 			'article_open_on_website' => 'when the article is opened on its original website',	// IGNORE
 			'article_viewed' => 'when the article is viewed',	// IGNORE
+			'focus' => 'when focused (except for important feeds)',	// IGNORE
 			'keep_max_n_unread' => 'Max number of articles to keep unread',	// IGNORE
-			'scroll' => 'while scrolling',	// IGNORE
+			'scroll' => 'while scrolling (except for important feeds)',	// IGNORE
 			'upon_gone' => 'when it is no longer in the upstream news feed',	// IGNORE
 			'upon_reception' => 'upon receiving the article',	// IGNORE
 			'when' => 'Mark an article as read…',	// IGNORE

@@ -68,7 +68,7 @@ return array(
 		'error' => '此源遇到一些問題。請在確認是否能正常訪問後重試。',
 		'filteractions' => array(
 			'_' => '過濾動作',
-			'help' => '每行寫一條過濾搜尋',
+			'help' => '每行寫一條過濾搜尋 Operators <a href="https://freshrss.github.io/FreshRSS/en/users/10_filter.html#with-the-search-field" target="_blank">see documentation</a>.',	// DIRTY
 		),
 		'information' => '信息',
 		'keep_min' => '至少保存的文章數',
@@ -122,6 +122,7 @@ return array(
 				'xpath' => 'XPath 定位：',
 			),
 			'rss' => 'RSS / Atom (默認)',
+			'xml_xpath' => 'XML + XPath',	// TODO
 		),
 		'maintenance' => array(
 			'clear_cache' => '清理暫存',
@@ -139,11 +140,12 @@ return array(
 		'priority' => array(
 			'_' => '可見性',
 			'archived' => '不顯示（歸檔）',
+			'category' => '在分類中顯示',
+			'important' => 'Show in important feeds',	// TODO
 			'main_stream' => '在首頁中顯示',
-			'normal' => '在分類中顯示',
 		),
 		'proxy' => '獲取訂閱源時的代理',
-		'proxy_help' => '選擇協議（例：SOCKS5）和代理地址（例：<kbd>127.0.0.1:1080</kbd>）',
+		'proxy_help' => '選擇協議（例：SOCKS5）和代理地址（例：<kbd>127.0.0.1:1080</kbd> or <kbd>username:password@127.0.0.1:1080</kbd>）',	// DIRTY
 		'selector_preview' => array(
 			'show_raw' => '顯示源碼',
 			'show_rendered' => '顯示內容',

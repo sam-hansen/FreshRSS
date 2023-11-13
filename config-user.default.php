@@ -61,6 +61,7 @@ return array (
 		'reception' => false,
 		'same_title_in_feed' => false,
 		'scroll' => false,
+		'focus' => false,
 		'site' => true,
 	),
 	'theme' => 'Origine',
@@ -100,6 +101,7 @@ return array (
 
 	'topline_read' => true,
 	'topline_favorite' => true,
+	'topline_website' => 'full',
 	'topline_thumbnail' => 'none',
 	'topline_summary' => false,
 	'topline_display_authors' => false,

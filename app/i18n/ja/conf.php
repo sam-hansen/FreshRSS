@@ -17,7 +17,7 @@ return array(
 		'help' => '個々のフィード設定内で、より多くの設定をしていただけます。',
 		'keep_favourites' => 'お気に入りを消去しない',
 		'keep_labels' => 'ラベルを消去しない',
-		'keep_max' => '記事を保存する最大数',
+		'keep_max' => '記事を保存する最大数',	// DIRTY
 		'keep_min_by_feed' => '記事をフィードに残す最小数',
 		'keep_period' => '記事を保存する最大時間',
 		'keep_unreads' => '未読の記事を消去しない',
@@ -32,7 +32,11 @@ return array(
 	),
 	'display' => array(
 		'_' => '表示',
-		'darkMode' => 'Automatic dark mode (beta)',	// TODO
+		'darkMode' => array(
+			'_' => 'Automatic dark mode (beta)',	// TODO
+			'auto' => 'Auto',	// TODO
+			'no' => 'No',	// TODO
+		),
 		'icon' => array(
 			'bottom_line' => '行の下部',
 			'display_authors' => '著者',
@@ -66,6 +70,13 @@ return array(
 		),
 		'timezone' => 'Time zone',	// TODO
 		'title' => 'ディスプレイ',
+		'website' => array(
+			'full' => 'Icon and name',	// TODO
+			'icon' => 'Icon only',	// TODO
+			'label' => 'Website',	// TODO
+			'name' => 'Name only',	// TODO
+			'none' => 'None',	// TODO
+		),
 		'width' => array(
 			'content' => 'コンテンツ幅',
 			'large' => '広い',
@@ -193,8 +204,9 @@ return array(
 		'read' => array(
 			'article_open_on_website' => '記事を元のwebサイトで開いたとき',
 			'article_viewed' => '記事を読んだとき',
+			'focus' => 'when focused (except for important feeds)',	// TODO
 			'keep_max_n_unread' => '未読の記事として残す最大数',
-			'scroll' => 'スクロールしているとき',
+			'scroll' => 'スクロールしているとき (except for important feeds)',	// DIRTY
 			'upon_gone' => 'ニュースフィードの提供元がなくなったとき',
 			'upon_reception' => '記事を受け取ったとき',
 			'when' => '記事を既読にする…',

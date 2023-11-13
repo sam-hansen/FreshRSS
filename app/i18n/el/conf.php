@@ -17,7 +17,7 @@ return array(
 		'help' => 'More options are available in the individual feed’s settings',	// TODO
 		'keep_favourites' => 'Never delete favourites',	// TODO
 		'keep_labels' => 'Never delete labels',	// TODO
-		'keep_max' => 'Maximum number of articles to keep',	// TODO
+		'keep_max' => 'Maximum number of articles to keep per feed',	// TODO
 		'keep_min_by_feed' => 'Minimum number of articles to keep per feed',	// TODO
 		'keep_period' => 'Maximum age of articles to keep',	// TODO
 		'keep_unreads' => 'Never delete unread articles',	// TODO
@@ -32,7 +32,11 @@ return array(
 	),
 	'display' => array(
 		'_' => 'Display',	// TODO
-		'darkMode' => 'Automatic dark mode (beta)',	// TODO
+		'darkMode' => array(
+			'_' => 'Automatic dark mode (beta)',	// TODO
+			'auto' => 'Auto',	// TODO
+			'no' => 'No',	// TODO
+		),
 		'icon' => array(
 			'bottom_line' => 'Bottom line',	// TODO
 			'display_authors' => 'Authors',	// TODO
@@ -66,6 +70,13 @@ return array(
 		),
 		'timezone' => 'Time zone',	// TODO
 		'title' => 'Display',	// TODO
+		'website' => array(
+			'full' => 'Icon and name',	// TODO
+			'icon' => 'Icon only',	// TODO
+			'label' => 'Website',	// TODO
+			'name' => 'Name only',	// TODO
+			'none' => 'None',	// TODO
+		),
 		'width' => array(
 			'content' => 'Content width',	// TODO
 			'large' => 'Wide',	// TODO
@@ -193,8 +204,9 @@ return array(
 		'read' => array(
 			'article_open_on_website' => 'when the article is opened on its original website',	// TODO
 			'article_viewed' => 'when the article is viewed',	// TODO
+			'focus' => 'when focused (except for important feeds)',	// TODO
 			'keep_max_n_unread' => 'Max number of articles to keep unread',	// TODO
-			'scroll' => 'while scrolling',	// TODO
+			'scroll' => 'while scrolling (except for important feeds)',	// TODO
 			'upon_gone' => 'when it is no longer in the upstream news feed',	// TODO
 			'upon_reception' => 'upon receiving the article',	// TODO
 			'when' => 'Mark an article as read…',	// TODO

@@ -17,7 +17,7 @@ return array(
 		'help' => '更多可用选项位于各订阅源的设置',
 		'keep_favourites' => '永不删除已收藏的文章',
 		'keep_labels' => '永不删除标签',
-		'keep_max' => '最多保留的文章数',
+		'keep_max' => '最多保留的文章数',	// DIRTY
 		'keep_min_by_feed' => '至少保留的文章数',
 		'keep_period' => '文章最多保留',
 		'keep_unreads' => '永不删除未读文章',
@@ -32,7 +32,11 @@ return array(
 	),
 	'display' => array(
 		'_' => '显示',
-		'darkMode' => 'Automatic dark mode (beta)',	// TODO
+		'darkMode' => array(
+			'_' => 'Automatic dark mode (beta)',	// TODO
+			'auto' => 'Auto',	// TODO
+			'no' => 'No',	// TODO
+		),
 		'icon' => array(
 			'bottom_line' => '底栏',
 			'display_authors' => '作者',
@@ -66,6 +70,13 @@ return array(
 		),
 		'timezone' => 'Time zone',	// TODO
 		'title' => '显示',
+		'website' => array(
+			'full' => 'Icon and name',	// TODO
+			'icon' => 'Icon only',	// TODO
+			'label' => 'Website',	// TODO
+			'name' => 'Name only',	// TODO
+			'none' => 'None',	// TODO
+		),
 		'width' => array(
 			'content' => '内容宽度',
 			'large' => '宽',
@@ -193,8 +204,9 @@ return array(
 		'read' => array(
 			'article_open_on_website' => '在打开原文章后',
 			'article_viewed' => '在文章被浏览后',
+			'focus' => 'when focused (except for important feeds)',	// TODO
 			'keep_max_n_unread' => '未读最多保留 n 条',
-			'scroll' => '在滚动浏览后',
+			'scroll' => '在滚动浏览后 (except for important feeds)',	// DIRTY
 			'upon_gone' => '在被原订阅源被移除后',
 			'upon_reception' => '在接收文章后',
 			'when' => '何时将文章标记为已读',

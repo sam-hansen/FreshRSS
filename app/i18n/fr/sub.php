@@ -68,7 +68,7 @@ return array(
 		'error' => 'Ce flux a rencontré un problème. Veuillez vérifier qu’il est toujours accessible puis actualisez-le.',
 		'filteractions' => array(
 			'_' => 'Filtres d’action',
-			'help' => 'Écrivez une recherche par ligne.',
+			'help' => 'Écrivez une recherche par ligne. Voir la <a href="https://freshrss.github.io/FreshRSS/fr/users/03_Main_view.html#gr%C3%A2ce-au-champ-de-recherche" target="_blank">documentation des opérateurs</a>.',
 		),
 		'information' => 'Informations',
 		'keep_min' => 'Nombre minimum d’articles à conserver',
@@ -122,6 +122,7 @@ return array(
 				'xpath' => 'XPath pour :',
 			),
 			'rss' => 'RSS / Atom (par défaut)',
+			'xml_xpath' => 'XML + XPath',	// IGNORE
 		),
 		'maintenance' => array(
 			'clear_cache' => 'Vider le cache',
@@ -139,11 +140,12 @@ return array(
 		'priority' => array(
 			'_' => 'Visibilité',
 			'archived' => 'Ne pas afficher (archivé)',
-			'main_stream' => 'Afficher dans le flux principal',
-			'normal' => 'Afficher dans sa catégorie',
+			'category' => 'Afficher dans sa catégorie',
+			'important' => 'Afficher dans les flux importants',
+			'main_stream' => 'Afficher dans les flux principaux',
 		),
 		'proxy' => 'Utiliser un proxy pour télécharger ce flux',
-		'proxy_help' => 'Sélectionner un protocole (ex : SOCKS5) et entrer l’adresse du proxy (ex. : <kbd>127.0.0.1:1080</kbd>)',
+		'proxy_help' => 'Sélectionner un protocole (ex : SOCKS5) et entrer l’adresse du proxy (ex. : <kbd>127.0.0.1:1080</kbd> ou <kbd>utilisateur:mot-de-passe@127.0.0.1:1080</kbd>)',
 		'selector_preview' => array(
 			'show_raw' => 'Afficher le code source',
 			'show_rendered' => 'Afficher le contenu',

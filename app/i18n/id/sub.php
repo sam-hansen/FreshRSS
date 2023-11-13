@@ -68,7 +68,7 @@ return array(
 		'error' => 'This feed has encountered a problem. Please verify that it is always reachable then update it.',	// TODO
 		'filteractions' => array(
 			'_' => 'Filter actions',	// TODO
-			'help' => 'Write one search filter per line.',	// TODO
+			'help' => 'Write one search filter per line. Operators <a href="https://freshrss.github.io/FreshRSS/en/users/10_filter.html#with-the-search-field" target="_blank">see documentation</a>.',	// TODO
 		),
 		'information' => 'Information',	// TODO
 		'keep_min' => 'Minimum number of articles to keep',	// TODO
@@ -122,6 +122,7 @@ return array(
 				'xpath' => 'XPath for:',	// TODO
 			),
 			'rss' => 'RSS / Atom (default)',	// TODO
+			'xml_xpath' => 'XML + XPath',	// TODO
 		),
 		'maintenance' => array(
 			'clear_cache' => 'Clear cache',	// TODO
@@ -139,11 +140,12 @@ return array(
 		'priority' => array(
 			'_' => 'Visibility',	// TODO
 			'archived' => 'Do not show (archived)',	// TODO
+			'category' => 'Show in its category',	// TODO
+			'important' => 'Show in important feeds',	// TODO
 			'main_stream' => 'Show in main stream',	// TODO
-			'normal' => 'Show in its category',	// TODO
 		),
 		'proxy' => 'Set a proxy for fetching this feed',	// TODO
-		'proxy_help' => 'Select a protocol (e.g: SOCKS5) and enter the proxy address (e.g: <kbd>127.0.0.1:1080</kbd>)',	// TODO
+		'proxy_help' => 'Select a protocol (e.g: SOCKS5) and enter the proxy address (e.g: <kbd>127.0.0.1:1080</kbd> or <kbd>username:password@127.0.0.1:1080</kbd>)',	// TODO
 		'selector_preview' => array(
 			'show_raw' => 'Show source code',	// TODO
 			'show_rendered' => 'Show content',	// TODO

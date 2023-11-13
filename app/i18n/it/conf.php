@@ -17,7 +17,7 @@ return array(
 		'help' => 'Altre opzioni sono disponibili nelle impostazioni dei singoli feed',
 		'keep_favourites' => 'Non eliminare mai i preferiti',
 		'keep_labels' => 'Non eliminare mai le etichette',
-		'keep_max' => 'Numero massimo di articoli da mantenere',
+		'keep_max' => 'Numero massimo di articoli da mantenere per feed',
 		'keep_min_by_feed' => 'Numero minimo di articoli da mantenere per feed',
 		'keep_period' => 'Massima durata degli articoli da mantenere',
 		'keep_unreads' => 'Non eliminare mai gli articoli non letti',
@@ -32,7 +32,11 @@ return array(
 	),
 	'display' => array(
 		'_' => 'Visualizzazione',
-		'darkMode' => 'Automatic dark mode (beta)',	// TODO
+		'darkMode' => array(
+			'_' => 'Automatic dark mode (beta)',	// TODO
+			'auto' => 'Auto',	// TODO
+			'no' => 'No',	// TODO
+		),
 		'icon' => array(
 			'bottom_line' => 'Barra in fondo',
 			'display_authors' => 'Autori',
@@ -66,6 +70,13 @@ return array(
 		),
 		'timezone' => 'Time zone',	// TODO
 		'title' => 'Visualizzazione',
+		'website' => array(
+			'full' => 'Icon and name',	// TODO
+			'icon' => 'Icon only',	// TODO
+			'label' => 'Website',	// TODO
+			'name' => 'Name only',	// TODO
+			'none' => 'None',	// TODO
+		),
 		'width' => array(
 			'content' => 'Larghezza contenuto',
 			'large' => 'Largo',
@@ -193,8 +204,9 @@ return array(
 		'read' => array(
 			'article_open_on_website' => 'Quando un articolo è aperto nel suo sito di origine',
 			'article_viewed' => 'Quando un articolo viene letto',
+			'focus' => 'when focused (except for important feeds)',	// TODO
 			'keep_max_n_unread' => 'Massimo numero di articoli da mantenere come non letti',
-			'scroll' => 'Scorrendo la pagina',
+			'scroll' => 'Scorrendo la pagina (except for important feeds)',	// DIRTY
 			'upon_gone' => 'quando non si trova più nel feed di notizie in alto',
 			'upon_reception' => 'Alla ricezione del contenuto',
 			'when' => 'Segna articoli come letti…',

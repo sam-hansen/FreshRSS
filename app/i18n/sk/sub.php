@@ -68,7 +68,7 @@ return array(
 		'error' => 'Vyskytol sa problém s týmto kanálom. Overte, prosím, či kanál stále existuje, potom ho obnovte.',
 		'filteractions' => array(
 			'_' => 'Filtrovať akcie',
-			'help' => 'Napíšte jeden výraz hľadania na riadok.',
+			'help' => 'Napíšte jeden výraz hľadania na riadok. Operators <a href="https://freshrss.github.io/FreshRSS/en/users/10_filter.html#with-the-search-field" target="_blank">see documentation</a>.',	// DIRTY
 		),
 		'information' => 'Informácia',
 		'keep_min' => 'Minimálny počet článkov na uchovanie',
@@ -122,6 +122,7 @@ return array(
 				'xpath' => 'XPath pre:',
 			),
 			'rss' => 'RSS / Atom (prednastavené)',
+			'xml_xpath' => 'XML + XPath',	// TODO
 		),
 		'maintenance' => array(
 			'clear_cache' => 'Vymazať vyrovnáciu pamäť',
@@ -139,11 +140,12 @@ return array(
 		'priority' => array(
 			'_' => 'Viditeľnosť',
 			'archived' => 'Nezobrazovať (archivované)',
+			'category' => 'Zobraziť vo svojej kategórii',
+			'important' => 'Show in important feeds',	// TODO
 			'main_stream' => 'Zobraziť v prehľade kanálov',
-			'normal' => 'Zobraziť vo svojej kategórii',
 		),
 		'proxy' => 'Na sťahovanie tohto kanálu nastaviť proxy',
-		'proxy_help' => 'Vyberte protokol (napr.: SOCKS5) a zadajte adresu proxy servera (napr.: <kbd>127.0.0.1:1080</kbd>)',
+		'proxy_help' => 'Vyberte protokol (napr.: SOCKS5) a zadajte adresu proxy servera (napr.: <kbd>127.0.0.1:1080</kbd> or <kbd>username:password@127.0.0.1:1080</kbd>)',	// DIRTY
 		'selector_preview' => array(
 			'show_raw' => 'Zobraziť zdrojový kód',
 			'show_rendered' => 'Zobraziť obsah',

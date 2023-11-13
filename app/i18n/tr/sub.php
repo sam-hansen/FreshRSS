@@ -68,7 +68,7 @@ return array(
 		'error' => 'Bu akışda bir hatayla karşılaşıldı. Lütfen akışın sürekli ulaşılabilir olduğuna emin olun.',
 		'filteractions' => array(
 			'_' => 'Eylemi filtrele',
-			'help' => 'Her satıra tek arama filtresi yaz.',
+			'help' => 'Her satıra tek arama filtresi yaz. Operators <a href="https://freshrss.github.io/FreshRSS/en/users/10_filter.html#with-the-search-field" target="_blank">see documentation</a>.',	// DIRTY
 		),
 		'information' => 'Bilgi',
 		'keep_min' => 'En az tutulacak makale sayısı',
@@ -122,6 +122,7 @@ return array(
 				'xpath' => 'XPath:',
 			),
 			'rss' => 'RSS / Atom (varsayılan)',
+			'xml_xpath' => 'XML + XPath',	// TODO
 		),
 		'maintenance' => array(
 			'clear_cache' => 'Önbelleği temizle',
@@ -139,11 +140,12 @@ return array(
 		'priority' => array(
 			'_' => 'Görünürlük',
 			'archived' => 'Gösterme (arşivlenmiş)',
+			'category' => 'Kendi kategorisinde göster',
+			'important' => 'Show in important feeds',	// TODO
 			'main_stream' => 'Ana akışda göster',
-			'normal' => 'Kendi kategorisinde göster',
 		),
 		'proxy' => 'Bu akışı güncellemek için vekil sunucu kullan',
-		'proxy_help' => 'Bir protokol seçin (ör: SOCKS5) vekil sunucu adresini girin (e.g: <kbd>127.0.0.1:1080</kbd>)',
+		'proxy_help' => 'Bir protokol seçin (ör: SOCKS5) vekil sunucu adresini girin (e.g: <kbd>127.0.0.1:1080</kbd> or <kbd>username:password@127.0.0.1:1080</kbd>)',	// DIRTY
 		'selector_preview' => array(
 			'show_raw' => 'Kaynak kodu göster',
 			'show_rendered' => 'İçeriği göster',

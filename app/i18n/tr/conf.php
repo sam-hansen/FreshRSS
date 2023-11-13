@@ -17,7 +17,7 @@ return array(
 		'help' => 'Akış ayarlarında daha çok ayar bulabilirsiniz',
 		'keep_favourites' => 'Favorileri asla silme',
 		'keep_labels' => 'Etiketleri asla silme',
-		'keep_max' => 'Bellekte tutulacak en fazla makale sayısı',
+		'keep_max' => 'Bellekte tutulacak en fazla makale sayısı',	// DIRTY
 		'keep_min_by_feed' => 'Akışta en az tutulacak makale sayısı',
 		'keep_period' => 'Bellekte tutulacak en eski makale tarihi',
 		'keep_unreads' => 'Okunmamaış makaleleri asla silme',
@@ -32,7 +32,11 @@ return array(
 	),
 	'display' => array(
 		'_' => 'Görünüm',
-		'darkMode' => 'Automatic dark mode (beta)',	// TODO
+		'darkMode' => array(
+			'_' => 'Automatic dark mode (beta)',	// TODO
+			'auto' => 'Auto',	// TODO
+			'no' => 'No',	// TODO
+		),
 		'icon' => array(
 			'bottom_line' => 'Alt çizgi',
 			'display_authors' => 'Yazarlar',
@@ -66,6 +70,13 @@ return array(
 		),
 		'timezone' => 'Time zone',	// TODO
 		'title' => 'Görünüm',
+		'website' => array(
+			'full' => 'simgesi and adı',
+			'icon' => 'Sadece simgesi',
+			'label' => 'Site',
+			'name' => 'Sadece adı',
+			'none' => 'Hiçbiri',
+		),
 		'width' => array(
 			'content' => 'İçerik genişliği',
 			'large' => 'Geniş',
@@ -193,8 +204,9 @@ return array(
 		'read' => array(
 			'article_open_on_website' => 'orijinal makale sitesi açıldığında',
 			'article_viewed' => 'makale görüntülendiğinde',
+			'focus' => 'when focused (except for important feeds)',	// TODO
 			'keep_max_n_unread' => 'Okunmadı tutulacak maksimum metin sayısı',
-			'scroll' => 'kaydırma yapılırken',
+			'scroll' => 'kaydırma yapılırken (except for important feeds)',	// DIRTY
 			'upon_gone' => 'Yeni akışta üst sıralarda değilken',
 			'upon_reception' => 'makale üzerinde gelince',
 			'when' => 'Makaleyi okundu olarak işaretle…',

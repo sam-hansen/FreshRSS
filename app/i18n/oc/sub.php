@@ -68,7 +68,7 @@ return array(
 		'error' => 'Aqueste flux a rescontrat un problèma. Volgatz verificar que siá totjorn accessible puèi actualizatz-lo.',
 		'filteractions' => array(
 			'_' => 'Filtre d’accion',
-			'help' => 'Escrivètz una recèrca per linha.',
+			'help' => 'Escrivètz una recèrca per linha. Operators <a href="https://freshrss.github.io/FreshRSS/en/users/10_filter.html#with-the-search-field" target="_blank">see documentation</a>.',	// DIRTY
 		),
 		'information' => 'Informacions',
 		'keep_min' => 'Nombre minimum d’articles de servar',
@@ -122,6 +122,7 @@ return array(
 				'xpath' => 'XPath per :',
 			),
 			'rss' => 'RSS / Atom (defaut)',
+			'xml_xpath' => 'XML + XPath',	// TODO
 		),
 		'maintenance' => array(
 			'clear_cache' => 'Escafar lo cache',
@@ -139,11 +140,12 @@ return array(
 		'priority' => array(
 			'_' => 'Visibilitat',
 			'archived' => 'Mostrar pas (archivat)',
+			'category' => 'Mostar dins sa categoria',
+			'important' => 'Show in important feeds',	// TODO
 			'main_stream' => 'Mostar al flux màger',
-			'normal' => 'Mostar dins sa categoria',
 		),
 		'proxy' => 'Definir un servidor proxy per trapar aqueste flux',
-		'proxy_help' => 'Seleccionatz un protocòl (ex : SOCKS5) e picatz l’adreça del proxy (ex : <kbd>127.0.0.1:1080</kbd>)',
+		'proxy_help' => 'Seleccionatz un protocòl (ex : SOCKS5) e picatz l’adreça del proxy (ex : <kbd>127.0.0.1:1080</kbd> or <kbd>username:password@127.0.0.1:1080</kbd>)',	// DIRTY
 		'selector_preview' => array(
 			'show_raw' => 'Veire lo còdi font',
 			'show_rendered' => 'Veire lo contengut',

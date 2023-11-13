@@ -68,7 +68,7 @@ return array(
 		'error' => 'このフィードに問題が発生しました。ここでアクセスできるかどうかを確認して更新してみてください。',
 		'filteractions' => array(
 			'_' => 'フィルターアクション',
-			'help' => '1行に1つの検索フィルターを設定してください',
+			'help' => '1行に1つの検索フィルターを設定してください Operators <a href="https://freshrss.github.io/FreshRSS/en/users/10_filter.html#with-the-search-field" target="_blank">see documentation</a>.',	// DIRTY
 		),
 		'information' => 'インフォメーション',
 		'keep_min' => '最小数の記事は保持されます',
@@ -122,6 +122,7 @@ return array(
 				'xpath' => 'XPathは:',
 			),
 			'rss' => 'RSS / Atom (標準)',
+			'xml_xpath' => 'XML + XPath',	// TODO
 		),
 		'maintenance' => array(
 			'clear_cache' => 'キャッシュのクリア',
@@ -139,11 +140,12 @@ return array(
 		'priority' => array(
 			'_' => '表示する場所',
 			'archived' => '非表示にする(アーカイブ)',
+			'category' => 'カテゴリで表示する',
+			'important' => 'Show in important feeds',	// TODO
 			'main_stream' => 'メインストリームで表示する',
-			'normal' => 'カテゴリで表示する',
 		),
 		'proxy' => 'フィードを読み込み時にproxyを設定してください',
-		'proxy_help' => 'プロトコルを選択し (例: SOCKS5) proxyアドレスを入力してください (例: <kbd>127.0.0.1:1080</kbd>)',
+		'proxy_help' => 'プロトコルを選択し (例: SOCKS5) proxyアドレスを入力してください (例: <kbd>127.0.0.1:1080</kbd> or <kbd>username:password@127.0.0.1:1080</kbd>)',	// DIRTY
 		'selector_preview' => array(
 			'show_raw' => 'ソースコードを表示する',
 			'show_rendered' => 'コンテンツを表示する',

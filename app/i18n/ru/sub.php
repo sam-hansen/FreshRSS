@@ -68,7 +68,7 @@ return array(
 		'error' => 'С этой лентой возникла проблема. Пожалуйста, убедитесь, что она всегда досягаема. Затем снова обновите её.',
 		'filteractions' => array(
 			'_' => 'Действия фильтрации',
-			'help' => 'Введите по одному поисковому фильтру в строке.',
+			'help' => 'Введите по одному поисковому фильтру в строке. Operators <a href="https://freshrss.github.io/FreshRSS/en/users/10_filter.html#with-the-search-field" target="_blank">see documentation</a>.',	// DIRTY
 		),
 		'information' => 'Информация',
 		'keep_min' => 'Оставлять статей не менее',
@@ -122,6 +122,7 @@ return array(
 				'xpath' => 'XPath для:',
 			),
 			'rss' => 'RSS / Atom (по умолчанию)',
+			'xml_xpath' => 'XML + XPath',	// TODO
 		),
 		'maintenance' => array(
 			'clear_cache' => 'Очистить кэш',
@@ -139,11 +140,12 @@ return array(
 		'priority' => array(
 			'_' => 'Видимость',
 			'archived' => 'Не показывать (архивировано)',
+			'category' => 'Показывать в категории ленты',
+			'important' => 'Show in important feeds',	// TODO
 			'main_stream' => 'Показывать в основном потоке',
-			'normal' => 'Показывать в категории ленты',
 		),
 		'proxy' => 'Указать прокси для извлечения этой ленты',
-		'proxy_help' => 'Выберите протокол (например, SOCKS5) и введите адрес прокси (например, <kbd>127.0.0.1:1080</kbd>)',
+		'proxy_help' => 'Выберите протокол (например, SOCKS5) и введите адрес прокси (например, <kbd>127.0.0.1:1080</kbd> or <kbd>username:password@127.0.0.1:1080</kbd>)',	// DIRTY
 		'selector_preview' => array(
 			'show_raw' => 'Показать исходный код',
 			'show_rendered' => 'Показать содержимое',

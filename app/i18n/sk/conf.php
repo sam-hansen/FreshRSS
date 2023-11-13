@@ -17,7 +17,7 @@ return array(
 		'help' => 'Viac možností nájdete v nastaveniach kanála',
 		'keep_favourites' => 'Nikdy nemazať obľúbené',
 		'keep_labels' => 'Nikdy nemazať štítky',
-		'keep_max' => 'Maximálny počet článkov na zachovanie',
+		'keep_max' => 'Maximálny počet článkov na zachovanie',	// DIRTY
 		'keep_min_by_feed' => 'Minimálny počet článkov kanála na zachovanie',
 		'keep_period' => 'Maximálny vek článkov na zachovanie',
 		'keep_unreads' => 'Nikdy nemazať neprečítané články',
@@ -32,7 +32,11 @@ return array(
 	),
 	'display' => array(
 		'_' => 'Zobrazenie',
-		'darkMode' => 'Automatic dark mode (beta)',	// TODO
+		'darkMode' => array(
+			'_' => 'Automatic dark mode (beta)',	// TODO
+			'auto' => 'Auto',	// TODO
+			'no' => 'No',	// TODO
+		),
 		'icon' => array(
 			'bottom_line' => 'Spodný riadok',
 			'display_authors' => 'Autori',
@@ -66,6 +70,13 @@ return array(
 		),
 		'timezone' => 'Time zone',	// TODO
 		'title' => 'Zobraziť',
+		'website' => array(
+			'full' => 'Icon and name',	// TODO
+			'icon' => 'Icon only',	// TODO
+			'label' => 'Website',	// TODO
+			'name' => 'Name only',	// TODO
+			'none' => 'None',	// TODO
+		),
 		'width' => array(
 			'content' => 'Šírka obsahu',
 			'large' => 'Veľká',
@@ -193,8 +204,9 @@ return array(
 		'read' => array(
 			'article_open_on_website' => 'keď je článok otvorený na svojej webovej stránke',
 			'article_viewed' => 'keď je článok zobrazený',
+			'focus' => 'when focused (except for important feeds)',	// TODO
 			'keep_max_n_unread' => 'Maximálny počet článkov ponechať ako neprečítané',
-			'scroll' => 'počas skrolovania',
+			'scroll' => 'počas skrolovania (except for important feeds)',	// DIRTY
 			'upon_gone' => 'keď už nie je v hlavnom kanály noviniek',
 			'upon_reception' => 'po načítaní článku',
 			'when' => 'Označiť článok ako prečítaný…',

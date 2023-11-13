@@ -68,7 +68,7 @@ return array(
 		'error' => 'This feed has encountered a problem. Please verify that it is always reachable then update it.',	// IGNORE
 		'filteractions' => array(
 			'_' => 'Filter actions',	// IGNORE
-			'help' => 'Write one search filter per line.',	// IGNORE
+			'help' => 'Write one search filter per line. Operators <a href="https://freshrss.github.io/FreshRSS/en/users/10_filter.html#with-the-search-field" target="_blank">see documentation</a>.',	// IGNORE
 		),
 		'information' => 'Information',	// IGNORE
 		'keep_min' => 'Minimum number of articles to keep',	// IGNORE
@@ -122,6 +122,7 @@ return array(
 				'xpath' => 'XPath for:',	// IGNORE
 			),
 			'rss' => 'RSS / Atom (default)',	// IGNORE
+			'xml_xpath' => 'XML + XPath',	// IGNORE
 		),
 		'maintenance' => array(
 			'clear_cache' => 'Clear cache',	// IGNORE
@@ -139,11 +140,12 @@ return array(
 		'priority' => array(
 			'_' => 'Visibility',	// IGNORE
 			'archived' => 'Do not show (archived)',	// IGNORE
+			'category' => 'Show in its category',	// IGNORE
+			'important' => 'Show in important feeds',	// IGNORE
 			'main_stream' => 'Show in main stream',	// IGNORE
-			'normal' => 'Show in its category',	// IGNORE
 		),
 		'proxy' => 'Set a proxy for fetching this feed',	// IGNORE
-		'proxy_help' => 'Select a protocol (e.g: SOCKS5) and enter the proxy address (e.g: <kbd>127.0.0.1:1080</kbd>)',	// IGNORE
+		'proxy_help' => 'Select a protocol (e.g: SOCKS5) and enter the proxy address (e.g: <kbd>127.0.0.1:1080</kbd> or <kbd>username:password@127.0.0.1:1080</kbd>)',	// IGNORE
 		'selector_preview' => array(
 			'show_raw' => 'Show source code',	// IGNORE
 			'show_rendered' => 'Show content',	// IGNORE

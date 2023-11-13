@@ -17,7 +17,7 @@ return array(
 		'help' => 'Więcej opcji dostępne jest w ustawieniach konkretnych kanałów',
 		'keep_favourites' => 'Nigdy nie usuwaj ulubionych',
 		'keep_labels' => 'Nigdy nie usuwaj oznaczonych etykietą',
-		'keep_max' => 'Maksymalna liczba wiadomości do przechowywania',
+		'keep_max' => 'Maksymalna liczba wiadomości do przechowywania w każdym kanale',
 		'keep_min_by_feed' => 'Minimalna liczba wiadomości do przechowywania w każdym kanale',
 		'keep_period' => 'Maksymalny wiek wiadomości do przechowywania',
 		'keep_unreads' => 'Nigdy nie usuwaj nieprzeczytanych wiadomości',
@@ -32,7 +32,11 @@ return array(
 	),
 	'display' => array(
 		'_' => 'Wyświetlanie',
-		'darkMode' => 'Automatic dark mode (beta)',	// TODO
+		'darkMode' => array(
+			'_' => 'Automatic dark mode (beta)',	// TODO
+			'auto' => 'Auto',	// TODO
+			'no' => 'No',	// TODO
+		),
 		'icon' => array(
 			'bottom_line' => 'Dolny margines',
 			'display_authors' => 'Autorzy',
@@ -66,6 +70,13 @@ return array(
 		),
 		'timezone' => 'Time zone',	// TODO
 		'title' => 'Wyświetlanie',
+		'website' => array(
+			'full' => 'Icon and name',	// TODO
+			'icon' => 'Icon only',	// TODO
+			'label' => 'Website',	// TODO
+			'name' => 'Name only',	// TODO
+			'none' => 'None',	// TODO
+		),
 		'width' => array(
 			'content' => 'Rozmiar treści',
 			'large' => 'Szeroka',
@@ -193,8 +204,9 @@ return array(
 		'read' => array(
 			'article_open_on_website' => 'gdy wiadomość jest otworzona na pierwotnej stronie',
 			'article_viewed' => 'gdy wiadomość jest otworzona',
+			'focus' => 'when focused (except for important feeds)',	// TODO
 			'keep_max_n_unread' => 'Maksymalna liczba nieprzeczytanych wiadomości',
-			'scroll' => 'podczas przewijania',
+			'scroll' => 'podczas przewijania (except for important feeds)',	// DIRTY
 			'upon_gone' => 'gdy nie jest już listowana w źródle kanału',
 			'upon_reception' => 'po otrzymaniu wiadomości',
 			'when' => 'Oznacz wiadomość jako przeczytaną…',

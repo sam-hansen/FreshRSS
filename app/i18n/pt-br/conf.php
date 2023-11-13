@@ -17,7 +17,7 @@ return array(
 		'help' => 'Mais opções estão disponíveis nas configurações individuais do Feed',
 		'keep_favourites' => 'Nunca deletar os favoritos',
 		'keep_labels' => 'Nunca deletar etiquetas',
-		'keep_max' => 'Número máximo de artigos para manter',
+		'keep_max' => 'Número máximo de artigos para manter no feed',
 		'keep_min_by_feed' => 'Número mínimo de artigos para deixar no feed',
 		'keep_period' => 'Idade máxima dos artigos a serem mantidos',
 		'keep_unreads' => 'Nunca apagar os não lidos',
@@ -32,7 +32,11 @@ return array(
 	),
 	'display' => array(
 		'_' => 'Exibição',
-		'darkMode' => 'Automatic dark mode (beta)',	// TODO
+		'darkMode' => array(
+			'_' => 'Automatic dark mode (beta)',	// TODO
+			'auto' => 'Auto',	// TODO
+			'no' => 'No',	// TODO
+		),
 		'icon' => array(
 			'bottom_line' => 'Linha inferior',
 			'display_authors' => 'Autores',
@@ -66,6 +70,13 @@ return array(
 		),
 		'timezone' => 'Time zone',	// TODO
 		'title' => 'Exibição',
+		'website' => array(
+			'full' => 'Icon and name',	// TODO
+			'icon' => 'Icon only',	// TODO
+			'label' => 'Website',	// TODO
+			'name' => 'Name only',	// TODO
+			'none' => 'None',	// TODO
+		),
 		'width' => array(
 			'content' => 'Largura do conteúdo',
 			'large' => 'Largo',
@@ -193,8 +204,9 @@ return array(
 		'read' => array(
 			'article_open_on_website' => 'quando o artigo é aberto no site original',
 			'article_viewed' => 'Quando o artigo é visualizado',
+			'focus' => 'when focused (except for important feeds)',	// TODO
 			'keep_max_n_unread' => 'Número máximo de artigos para manter como não lido',
-			'scroll' => 'enquanto scrolling',
+			'scroll' => 'enquanto scrolling (except for important feeds)',	// DIRTY
 			'upon_gone' => 'QUuando não estiver mais no feed de noticiais principais',
 			'upon_reception' => 'ao receber um artigo',
 			'when' => 'Marcar artigo como lido…',

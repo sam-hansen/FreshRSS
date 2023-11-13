@@ -68,7 +68,7 @@ return array(
 		'error' => 'Questo feed ha generato un errore. Per favore verifica se ancora disponibile.',
 		'filteractions' => array(
 			'_' => 'Azioni di filtro',
-			'help' => 'Scrivi un filtro di ricerca per riga.',
+			'help' => 'Scrivi un filtro di ricerca per riga. Operators <a href="https://freshrss.github.io/FreshRSS/en/users/10_filter.html#with-the-search-field" target="_blank">see documentation</a>.',	// DIRTY
 		),
 		'information' => 'Informazioni',
 		'keep_min' => 'Numero minimo di articoli da mantenere',
@@ -122,6 +122,7 @@ return array(
 				'xpath' => 'XPath per:',
 			),
 			'rss' => 'RSS / Atom (predefinito)',
+			'xml_xpath' => 'XML + XPath',	// TODO
 		),
 		'maintenance' => array(
 			'clear_cache' => 'Svuota cache',
@@ -139,11 +140,12 @@ return array(
 		'priority' => array(
 			'_' => 'Visibilità',
 			'archived' => 'Non mostrare (archiviato)',
+			'category' => 'Mostra nella sua categoria',
+			'important' => 'Show in important feeds',	// TODO
 			'main_stream' => 'Mostra in homepage',
-			'normal' => 'Mostra nella sua categoria',
 		),
 		'proxy' => 'Imposta un proxy per recuperare questo feed',
-		'proxy_help' => 'Seleziona un protocollo (e.g: SOCKS5) ed inserisci l’indirizzo del proxy (e.g: <kbd>127.0.0.1:1080</kbd>)',
+		'proxy_help' => 'Seleziona un protocollo (e.g: SOCKS5) ed inserisci l’indirizzo del proxy (e.g: <kbd>127.0.0.1:1080</kbd> or <kbd>username:password@127.0.0.1:1080</kbd>)',	// DIRTY
 		'selector_preview' => array(
 			'show_raw' => 'Mostra codice sorgente',
 			'show_rendered' => 'Mostra contenuto',

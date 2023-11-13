@@ -17,7 +17,7 @@ return array(
 		'help' => 'В индивидуальных настройках лент есть больше опций',
 		'keep_favourites' => 'Никогда не удалять избранное',
 		'keep_labels' => 'Никогда не удалять метки',
-		'keep_max' => 'Максимальное количество статей',
+		'keep_max' => 'Максимальное количество статей',	// DIRTY
 		'keep_min_by_feed' => 'Минимальное количество статей в ленте',
 		'keep_period' => 'Максимальный возраст статей',
 		'keep_unreads' => 'Никогда не удалять непрочитанные статьи',
@@ -32,7 +32,11 @@ return array(
 	),
 	'display' => array(
 		'_' => 'Отображение',
-		'darkMode' => 'Automatic dark mode (beta)',	// TODO
+		'darkMode' => array(
+			'_' => 'Automatic dark mode (beta)',	// TODO
+			'auto' => 'Auto',	// TODO
+			'no' => 'No',	// TODO
+		),
 		'icon' => array(
 			'bottom_line' => 'Нижняя линия',
 			'display_authors' => 'Авторы',
@@ -66,6 +70,13 @@ return array(
 		),
 		'timezone' => 'Time zone',	// TODO
 		'title' => 'Отображение',
+		'website' => array(
+			'full' => 'Icon and name',	// TODO
+			'icon' => 'Icon only',	// TODO
+			'label' => 'Website',	// TODO
+			'name' => 'Name only',	// TODO
+			'none' => 'None',	// TODO
+		),
 		'width' => array(
 			'content' => 'Ширина содержимого',
 			'large' => 'Широкое',
@@ -193,8 +204,9 @@ return array(
 		'read' => array(
 			'article_open_on_website' => 'когда статья открывается на её сайте',
 			'article_viewed' => 'когда статья просматривается',
+			'focus' => 'when focused (except for important feeds)',	// TODO
 			'keep_max_n_unread' => 'Максимальное количество непрочитанных статей',
-			'scroll' => 'во время прокрутки',
+			'scroll' => 'во время прокрутки (except for important feeds)',	// DIRTY
 			'upon_gone' => 'когда это больше не в новостной ленте',
 			'upon_reception' => 'по получении статьи',
 			'when' => 'Отмечать статью прочитанной…',
